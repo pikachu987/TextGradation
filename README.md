@@ -1,8 +1,8 @@
 # TextGradation
 
-[![Version](https://img.shields.io/cocoapods/v/Tags.svg?style=flat)](http://cocoapods.org/pods/Tags)
-[![License](https://img.shields.io/cocoapods/l/Tags.svg?style=flat)](http://cocoapods.org/pods/Tags)
-[![Platform](https://img.shields.io/cocoapods/p/Tags.svg?style=flat)](http://cocoapods.org/pods/Tags)
+[![Version](https://img.shields.io/cocoapods/v/TextGradation.svg?style=flat)](http://cocoapods.org/pods/Tags)
+[![License](https://img.shields.io/cocoapods/l/TextGradation.svg?style=flat)](http://cocoapods.org/pods/Tags)
+[![Platform](https://img.shields.io/cocoapods/p/TextGradation.svg?style=flat)](http://cocoapods.org/pods/Tags)
 [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 ## Introduce

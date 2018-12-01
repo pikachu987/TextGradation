@@ -9,9 +9,7 @@
 
 You can add a gradient to the text of a UILabel or UIButton.
 
-![demo](./Image/1.gif)
-
-![demo2](./Image/2.jpeg)
+<img src='./Image/1.gif' width='200px'>
 
 ## Requirements
 

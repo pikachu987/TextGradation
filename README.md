@@ -49,9 +49,15 @@ import TextGradation
 
 ```swift
 
-gradationLabel.gradation(.horizontal, colors: [UIColor.gray, UIColor.red, UIColor.blue, UIColor.black])
+gradationLabel.gradation(
+    .horizontal, 
+    colors: [UIColor.gray, UIColor.red, UIColor.blue, UIColor.black]
+)
 
-gradationButton.gradation(.horizontal, colors: [UIColor.gray, UIColor.red, UIColor.blue, UIColor.black])
+gradationButton.gradation(
+    .horizontal, 
+    colors: [UIColor.gray, UIColor.red, UIColor.blue, UIColor.black]
+)
 
 ```
 
@@ -59,13 +65,33 @@ progress
 
 ```swift
 
-gradationProgressHorizontalLabel.gradation(.horizontal, startColor: UIColor(red: 106/255, green: 183/255, blue: 216/255, alpha: 1), endColor: .black, progress: CGFloat(sender.value))
+gradationProgressHorizontalLabel.gradation(
+    .horizontal, 
+    startColor: UIColor(red: 106/255, green: 183/255, blue: 216/255, alpha: 1), 
+    endColor: .black, 
+    progress: CGFloat(sender.value)
+)
 
-gradationProgressVerticalLabel.gradation(.vertical, startColor: UIColor(red: 106/255, green: 183/255, blue: 216/255, alpha: 1), endColor: .black, progress: CGFloat(sender.value))
+gradationProgressVerticalLabel.gradation(
+    .vertical, 
+    startColor: UIColor(red: 106/255, green: 183/255, blue: 216/255, alpha: 1), 
+    endColor: .black, 
+    progress: CGFloat(sender.value)
+)
 
-gradationProgressHorizontalButton.gradation(.horizontal, startColor: UIColor(red: 106/255, green: 183/255, blue: 216/255, alpha: 1), endColor: .black, progress: CGFloat(sender.value))
+gradationProgressHorizontalButton.gradation(
+    .horizontal, 
+    startColor: UIColor(red: 106/255, green: 183/255, blue: 216/255, alpha: 1), 
+    endColor: .black, 
+    progress: CGFloat(sender.value)
+)
 
-gradationProgressVerticalButton.gradation(.vertical, startColor: UIColor(red: 106/255, green: 183/255, blue: 216/255, alpha: 1), endColor: .black, progress: CGFloat(sender.value))
+gradationProgressVerticalButton.gradation(
+    .vertical, 
+    startColor: UIColor(red: 106/255, green: 183/255, blue: 216/255, alpha: 1), 
+    endColor: .black, 
+    progress: CGFloat(sender.value)
+)
 
 ```
 

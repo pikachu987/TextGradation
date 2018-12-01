@@ -1,0 +1,16 @@
+PODS:
+  - TextGradation (0.1.0)
+
+DEPENDENCIES:
+  - TextGradation (from `../`)
+
+EXTERNAL SOURCES:
+  TextGradation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TextGradation: ae202a23fbfe283a18de702a5c20588a6c49cb4c
+
+PODFILE CHECKSUM: 2f7a482fbb127a9c2969256af576784f21b8e59c
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextGradation_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GradationProgressHorizontalLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbo-jx-NE4">
+                                <rect key="frame" x="20" y="130.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GradationProgressVerticalLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJF-uo-cnT">
+                                <rect key="frame" x="20" y="171" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GradationLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol9-5c-Ach">
+                                <rect key="frame" x="20" y="40" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMK-To-jvr">
+                                <rect key="frame" x="20" y="211.5" width="335" height="30"/>
+                                <state key="normal" title="GradationProgressHorizontalButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3e-X8-CnI">
+                                <rect key="frame" x="20" y="261.5" width="335" height="30"/>
+                                <state key="normal" title="GradationProgressVerticalButton"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ly3-5u-Q06">
+                                <rect key="frame" x="18" y="617" width="339" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="aEf-EU-qTi"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEu-SV-2bU" customClass="GradationLabel" customModule="TextGradation">
+                                <rect key="frame" x="20" y="311.5" width="335" height="61"/>
+                                <string key="text">GradationProgressLabel
+GradationProgressLabel
+GradationProgressLabel</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.29045378243724912" green="0.43539737364280034" blue="0.67000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.55000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="orientation">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-Lg-RSV" customClass="GradationButton" customModule="TextGradation">
+                                <rect key="frame" x="20" y="392.5" width="335" height="30"/>
+                                <state key="normal" title="GradationProgressButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.26557912810000001" green="0.21531465150000001" blue="0.83419689119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.55000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxx-cn-awI">
+                                <rect key="frame" x="20" y="80.5" width="335" height="30"/>
+                                <state key="normal" title="GradationButton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gEu-SV-2bU" secondAttribute="trailing" constant="20" id="4kf-2N-LWC"/>
+                            <constraint firstItem="nMK-To-jvr" firstAttribute="top" secondItem="GJF-uo-cnT" secondAttribute="bottom" constant="20" id="4oY-kh-rgr"/>
+                            <constraint firstItem="Bxx-cn-awI" firstAttribute="top" secondItem="Ol9-5c-Ach" secondAttribute="bottom" constant="20" id="7Rs-5h-lR1"/>
+                            <constraint firstAttribute="trailing" secondItem="nMK-To-jvr" secondAttribute="trailing" constant="20" id="BxK-mb-lg2"/>
+                            <constraint firstItem="gEu-SV-2bU" firstAttribute="top" secondItem="c3e-X8-CnI" secondAttribute="bottom" constant="20" id="DKX-9G-dca"/>
+                            <constraint firstItem="nMK-To-jvr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Gei-RO-RRh"/>
+                            <constraint firstItem="rUr-Lg-RSV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="JN9-P4-Brs"/>
+                            <constraint firstAttribute="trailing" secondItem="rUr-Lg-RSV" secondAttribute="trailing" constant="20" id="PhL-TH-szs"/>
+                            <constraint firstItem="gEu-SV-2bU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Qgf-Qn-b9F"/>
+                            <constraint firstAttribute="trailing" secondItem="GJF-uo-cnT" secondAttribute="trailing" constant="20" id="W1V-70-Fxb"/>
+                            <constraint firstAttribute="trailing" secondItem="c3e-X8-CnI" secondAttribute="trailing" constant="20" id="WEU-To-Q6X"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ly3-5u-Q06" secondAttribute="bottom" constant="20" id="XQN-by-pjf"/>
+                            <constraint firstItem="c3e-X8-CnI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="XSp-G0-61O"/>
+                            <constraint firstItem="GJF-uo-cnT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ZUG-48-UJT"/>
+                            <constraint firstItem="Ol9-5c-Ach" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="a6x-xu-3Pl"/>
+                            <constraint firstAttribute="trailing" secondItem="zbo-jx-NE4" secondAttribute="trailing" constant="20" id="b7G-C7-Kww"/>
+                            <constraint firstItem="c3e-X8-CnI" firstAttribute="top" secondItem="nMK-To-jvr" secondAttribute="bottom" constant="20" id="bFm-oA-SU4"/>
+                            <constraint firstItem="Ol9-5c-Ach" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="edk-ft-XSx"/>
+                            <constraint firstItem="ly3-5u-Q06" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="fQK-JC-3GY"/>
+                            <constraint firstItem="zbo-jx-NE4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="fTa-4z-EvU"/>
+                            <constraint firstAttribute="trailing" secondItem="ly3-5u-Q06" secondAttribute="trailing" constant="20" id="g7r-et-KSM"/>
+                            <constraint firstItem="zbo-jx-NE4" firstAttribute="top" secondItem="Bxx-cn-awI" secondAttribute="bottom" constant="20" id="ivR-br-PUa"/>
+                            <constraint firstItem="GJF-uo-cnT" firstAttribute="top" secondItem="zbo-jx-NE4" secondAttribute="bottom" constant="20" id="jeN-SU-gI5"/>
+                            <constraint firstItem="rUr-Lg-RSV" firstAttribute="top" secondItem="gEu-SV-2bU" secondAttribute="bottom" constant="20" id="kCh-s4-Bcv"/>
+                            <constraint firstItem="Bxx-cn-awI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="rxz-Kb-azZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ol9-5c-Ach" secondAttribute="trailing" constant="20" id="t0R-4H-yqj"/>
+                            <constraint firstAttribute="trailing" secondItem="Bxx-cn-awI" secondAttribute="trailing" constant="20" id="yDV-n2-E1S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UBe-kH-aQE"/>
+                    <connections>
+                        <outlet property="gradationButton" destination="Bxx-cn-awI" id="kmO-lE-Ov9"/>
+                        <outlet property="gradationLabel" destination="Ol9-5c-Ach" id="cq3-WB-KXH"/>
+                        <outlet property="gradationProgressButton" destination="rUr-Lg-RSV" id="qEL-O9-G6I"/>
+                        <outlet property="gradationProgressHorizontalButton" destination="nMK-To-jvr" id="5Nn-UC-IwT"/>
+                        <outlet property="gradationProgressHorizontalLabel" destination="zbo-jx-NE4" id="ZDA-Me-dYZ"/>
+                        <outlet property="gradationProgressLabel" destination="gEu-SV-2bU" id="ya7-kj-gwE"/>
+                        <outlet property="gradationProgressVerticalButton" destination="c3e-X8-CnI" id="LQo-c3-v2I"/>
+                        <outlet property="gradationProgressVerticalLabel" destination="GJF-uo-cnT" id="IQf-KQ-DTF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

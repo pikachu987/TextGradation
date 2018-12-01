@@ -1,0 +1,6 @@
+framework module Pods_TextGradation_Example {
+  umbrella header "Pods-TextGradation_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

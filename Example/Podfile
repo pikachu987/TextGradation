@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TextGradation_Example' do
+  pod 'TextGradation', :path => '../'
+
+  target 'TextGradation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

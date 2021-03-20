@@ -22,7 +22,7 @@ import UIKit
 
 public extension UIButton {
     @discardableResult
-    public func gradation(_ orientation: GradationOrientation, startColor: UIColor, endColor: UIColor, progress: CGFloat) -> Bool {
+    func gradation(_ orientation: GradationOrientation, startColor: UIColor, endColor: UIColor, progress: CGFloat) -> Bool {
         let count = 20
         var colors = [CGColor]()
         
@@ -37,12 +37,12 @@ public extension UIButton {
     }
     
     @discardableResult
-    public func gradation(_ orientation: GradationOrientation, colors: [UIColor]) -> Bool {
+    func gradation(_ orientation: GradationOrientation, colors: [UIColor]) -> Bool {
         return self.gradation(orientation, colors: colors.map({ $0.cgColor }))
     }
     
     @discardableResult
-    public func gradation(_ orientation: GradationOrientation, colors: [CGColor]) -> Bool {
+    func gradation(_ orientation: GradationOrientation, colors: [CGColor]) -> Bool {
         let textSize = (self.currentTitle ?? "").size(withAttributes: [NSAttributedString.Key.font : self.titleLabel?.font ?? UIFont.systemFont(ofSize: 17)])
         let width = self.bounds.width < textSize.width ? self.bounds.width : textSize.width
         let labelHeight = self.height(width)
@@ -55,7 +55,7 @@ public extension UIButton {
     }
     
     @discardableResult
-    public func gradation(_ orientation: GradationOrientation, colors: UIColor...) -> Bool {
+    func gradation(_ orientation: GradationOrientation, colors: UIColor...) -> Bool {
         return self.gradation(orientation, colors: colors.map({ $0.cgColor }))
     }
     

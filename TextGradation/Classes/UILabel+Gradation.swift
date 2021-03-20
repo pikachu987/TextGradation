@@ -22,7 +22,7 @@ import UIKit
 
 public extension UILabel {
     @discardableResult
-    public func gradation(_ orientation: GradationOrientation, startColor: UIColor, endColor: UIColor, progress: CGFloat) -> Bool {
+    func gradation(_ orientation: GradationOrientation, startColor: UIColor, endColor: UIColor, progress: CGFloat) -> Bool {
         let count = 20
         var colors = [CGColor]()
         
@@ -37,8 +37,8 @@ public extension UILabel {
     }
     
     @discardableResult
-    public func gradation(_ orientation: GradationOrientation, colors: [CGColor]) -> Bool {
-        let textSize = (self.text ?? "").size(withAttributes: [NSAttributedString.Key.font : self.font])
+    func gradation(_ orientation: GradationOrientation, colors: [CGColor]) -> Bool {
+        let textSize = (self.text ?? "").size(withAttributes: [NSAttributedString.Key.font : self.font ?? .systemFont(ofSize: 15)])
         let width = self.bounds.width < textSize.width ? self.bounds.width : textSize.width
         let labelHeight = self.height(width)
         let height = self.bounds.height < labelHeight ? self.bounds.height : labelHeight
@@ -50,12 +50,12 @@ public extension UILabel {
     }
     
     @discardableResult
-    public func gradation(_ orientation: GradationOrientation, colors: [UIColor]) -> Bool {
+    func gradation(_ orientation: GradationOrientation, colors: [UIColor]) -> Bool {
         return self.gradation(orientation, colors: colors.map({ $0.cgColor }))
     }
     
     @discardableResult
-    public func gradation(_ orientation: GradationOrientation, colors: UIColor...) -> Bool {
+    func gradation(_ orientation: GradationOrientation, colors: UIColor...) -> Bool {
         return self.gradation(orientation, colors: colors.map({ $0.cgColor }))
     }
     

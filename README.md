@@ -1,9 +1,11 @@
 # TextGradation
 
+[![CI Status](https://img.shields.io/travis/pikachu987/TextGradation.svg?style=flat)](https://travis-ci.org/pikachu987/TextGradation)
 [![Version](https://img.shields.io/cocoapods/v/TextGradation.svg?style=flat)](http://cocoapods.org/pods/Tags)
 [![License](https://img.shields.io/cocoapods/l/TextGradation.svg?style=flat)](http://cocoapods.org/pods/Tags)
 [![Platform](https://img.shields.io/cocoapods/p/TextGradation.svg?style=flat)](http://cocoapods.org/pods/Tags)
-[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+![](https://img.shields.io/badge/Supported-iOS9%20%7C%20OSX%2010.9-4BC51D.svg?style=flat-square)
+![](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)
 
 ## Introduce
 
@@ -13,7 +15,7 @@ You can add a gradient to the text of a UILabel or UIButton.
 
 ## Requirements
 
-`TextGradation` written in Swift 4.2. Compatible with iOS 8.0+
+`TextGradation` written in Swift 5.0. Compatible with iOS 9.0+
 
 ## Installation
 

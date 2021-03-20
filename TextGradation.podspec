@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TextGradation'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Gradation of UILabel or UIButton'
 
 # This description is used to generate tags and improve search results.
@@ -29,11 +29,11 @@ DESC
   s.source           = { :git => 'https://github.com/pikachu987/TextGradation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'TextGradation/Classes/**/*'
   
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'TextGradation' => ['TextGradation/Assets/*.png']

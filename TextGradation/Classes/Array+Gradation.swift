@@ -21,7 +21,7 @@
 import UIKit
 
 public extension Array where Element == CGColor {
-    public func gradation(_ orientation: GradationOrientation, size: CGSize) -> UIImage? {
+    func gradation(_ orientation: GradationOrientation, size: CGSize) -> UIImage? {
         UIGraphicsBeginImageContext(size)
         defer { UIGraphicsEndImageContext() }
         guard let context = UIGraphicsGetCurrentContext() else { return nil }
@@ -36,7 +36,7 @@ public extension Array where Element == CGColor {
 }
 
 public extension Array where Element == UIColor {
-    public func gradation(_ orientation: GradationOrientation, size: CGSize) -> UIImage? {
+    func gradation(_ orientation: GradationOrientation, size: CGSize) -> UIImage? {
         return self.map({ $0.cgColor }).gradation(orientation, size: size)
     }
 }
